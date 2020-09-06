@@ -1,0 +1,7 @@
+<div class="lista">
+    <div class="row">
+        <div class="col-12 col-md-4" *ngFor="let prod of productos">
+            <app-producto [producto]="prod" (productoComprado)="onProductoComprado($event)"></app-producto>
+        </div>
+    </div>
+</div>
